@@ -481,6 +481,545 @@ QUIZ_QUESTIONS = [
 ]
 
 # ══════════════════════════════════════════════════════════════════════════════
+# DATA — LECTURE QUIZ (100 MCQ questions across 10 topics)
+# ══════════════════════════════════════════════════════════════════════════════
+# Each entry: topic, question, options (list), correct (must match an option exactly)
+LECTURE_QUIZ_TOPICS = [
+    "Neuroanatomy",
+    "Neurodevelopmental Disorders",
+    "Neuropharmacology",
+    "Memory Disorders",
+    "Movement Disorders",
+    "Visual, Auditory & Language Disorders",
+    "Affective Disorders",
+    "Schizophrenia",
+    "Delirium",
+    "Peripheral Nervous System",
+]
+
+LECTURE_QUIZ_QUESTIONS = [
+    # ── NEUROANATOMY (10) ──────────────────────────────────────────────────────
+    {"topic": "Neuroanatomy",
+     "q": "Which layer of the meninges is the outermost, described as 'tough mother'?",
+     "options": ["Subarachnoid membrane", "Dura mater", "Arachnoid mater", "Pia mater"],
+     "correct": "Dura mater",
+     "explanation": "The dura mater is the outermost, very tough covering of the brain. It is described as 'tough mother' and contains the venous sinuses."},
+    {"topic": "Neuroanatomy",
+     "q": "Which brain area is primarily responsible for the planning and coordination of speech production (Broca's area)?",
+     "options": ["Occipital lobe", "Parietal lobe", "Temporal lobe", "Frontal lobe (Broca's area)"],
+     "correct": "Frontal lobe (Broca's area)",
+     "explanation": "Broca's area is located in the frontal lobe and is the speech centre involved in planning mouth and laryngeal movements. Damage impairs speech production but not understanding."},
+    {"topic": "Neuroanatomy",
+     "q": "Which of the following best describes the primary function of the cerebellum?",
+     "options": ["Generates language comprehension", "Initiates voluntary movement", "Coordinates and fine-tunes voluntary movement", "Processes visual information"],
+     "correct": "Coordinates and fine-tunes voluntary movement",
+     "explanation": "The cerebellum coordinates voluntary movements including posture, balance, coordination and speech, and contributes to precision and timing — but does not initiate movement."},
+    {"topic": "Neuroanatomy",
+     "q": "Which of these structures is NOT listed as part of the basal ganglia?",
+     "options": ["Putamen", "Hippocampus", "Globus pallidus", "Caudate nucleus"],
+     "correct": "Hippocampus",
+     "explanation": "The basal ganglia include the caudate, putamen, globus pallidus, substantia nigra and subthalamic nucleus. The hippocampus is part of the limbic system."},
+    {"topic": "Neuroanatomy",
+     "q": "Which artery pair provides roughly 70% of cerebral blood flow?",
+     "options": ["Internal carotid / anterior circulation (~70%)", "Vertebral arteries (posterior flow)", "Pulmonary arteries", "External carotid arteries"],
+     "correct": "Internal carotid / anterior circulation (~70%)",
+     "explanation": "Anterior flow via the internal carotid system provides approximately 70% of cerebral blood flow, with the vertebral-basilar system supplying the remaining 30%."},
+    {"topic": "Neuroanatomy",
+     "q": "Approximately what proportion of strokes are ischaemic?",
+     "options": ["About 50%", "About 10%", "About 80%", "About 100%"],
+     "correct": "About 80%",
+     "explanation": "About 80% of strokes are ischaemic, caused by arterial narrowing or blockage leading to reduced cerebral blood flow."},
+    {"topic": "Neuroanatomy",
+     "q": "How is a transient ischaemic attack (TIA) defined?",
+     "options": ["A type of seizure unrelated to blood flow", "A permanent stroke causing lasting deficits", "A chronic degenerative disease of the cortex", "A brief focal neurological episode lasting less than 24 hours"],
+     "correct": "A brief focal neurological episode lasting less than 24 hours",
+     "explanation": "A TIA is a brief episode of focal neurological symptoms caused by transient loss of blood flow that lasts less than 24 hours and leaves no permanent deficit."},
+    {"topic": "Neuroanatomy",
+     "q": "Which structure consists of a wide, thick bundle of commissural fibres connecting the two cerebral hemispheres and contains approximately 200–300 million axons?",
+     "options": ["Internal capsule", "Corpus callosum", "Corona radiata", "Anterior commissure"],
+     "correct": "Corpus callosum",
+     "explanation": "The corpus callosum is the major commissural tract connecting the two cerebral hemispheres, described as a wide, thick bundle with about 200–300 million axons."},
+    {"topic": "Neuroanatomy",
+     "q": "Wernicke's area, important for language perception and recognition, is located primarily in which cerebral lobe?",
+     "options": ["Temporal lobe", "Occipital lobe", "Frontal lobe", "Parietal lobe"],
+     "correct": "Temporal lobe",
+     "explanation": "Wernicke's area is traditionally located in the temporal lobe and is associated with language comprehension. Damage produces receptive (Wernicke's) aphasia."},
+    {"topic": "Neuroanatomy",
+     "q": "Which structure is identified as the primary site of cerebrospinal fluid (CSF) production within the ventricles?",
+     "options": ["Lateral ventricles (as cavities)", "Arachnoid granulations (villi)", "Choroid plexus", "Pia mater"],
+     "correct": "Choroid plexus",
+     "explanation": "CSF is produced by the choroid plexus within the ventricular system. The choroid plexus transforms blood into CSF."},
+
+    # ── NEURODEVELOPMENTAL DISORDERS (10) ─────────────────────────────────────
+    {"topic": "Neurodevelopmental Disorders",
+     "q": "Which developmental process results in the removal of about half of synapses during postnatal brain development?",
+     "options": ["Synaptic pruning", "Adult neurogenesis", "Apoptosis of neurons", "Synaptogenesis (exuberant synapse formation)"],
+     "correct": "Synaptic pruning",
+     "explanation": "After a period of exuberant synaptogenesis, many least-used synapses are eliminated by synaptic pruning — the 'use it or lose it' principle."},
+    {"topic": "Neurodevelopmental Disorders",
+     "q": "Which statement best describes 'experience-expectant' brain development?",
+     "options": ["It describes skills the brain develops only later in life that it does not expect.", "It refers to early phases when the brain is primed to expect typical environmental inputs (e.g., visual, auditory) for normal development.", "It means the brain develops entirely independently of environmental input.", "It refers to any individual experience that changes the brain later in life."],
+     "correct": "It refers to early phases when the brain is primed to expect typical environmental inputs (e.g., visual, auditory) for normal development.",
+     "explanation": "Experience-expectant development refers to earlier phases when the brain is primed to expect typical environmental inputs such as visual and auditory stimulation for normal development."},
+    {"topic": "Neurodevelopmental Disorders",
+     "q": "Which three primary germ layers are formed during gastrulation?",
+     "options": ["Endoderm, mesoderm, ectoderm", "Proencephalon, mesencephalon, rhombencephalon", "Epiderm, dermis, hypoderm", "Neuroderm, myoderm, endothelm"],
+     "correct": "Endoderm, mesoderm, ectoderm",
+     "explanation": "The three germ layers produced at gastrulation are the endoderm, mesoderm and ectoderm, which give rise to different tissues and organs in the embryo."},
+    {"topic": "Neurodevelopmental Disorders",
+     "q": "Failure of the posterior neuropore to close during neurulation most commonly leads to which defect?",
+     "options": ["Holoprosencephaly", "Spina bifida", "Microcephaly", "Anencephaly"],
+     "correct": "Spina bifida",
+     "explanation": "Failure of the posterior neuropore to close produces spina bifida, whereas anterior neuropore failure leads to anencephaly."},
+    {"topic": "Neurodevelopmental Disorders",
+     "q": "According to the lecture, what is the fate of synapses that are more active during development?",
+     "options": ["They are preferentially pruned", "They are transformed into glial cells", "They are strengthened and stabilised", "They become weakened and lose function"],
+     "correct": "They are strengthened and stabilised",
+     "explanation": "Active synapses are strengthened while less active ones are weakened and ultimately pruned — the 'use it or lose it' principle."},
+    {"topic": "Neurodevelopmental Disorders",
+     "q": "What does the neurotrophic hypothesis propose about developing neurons?",
+     "options": ["Neurons that establish effective connections obtain more neurotrophic factors and are more likely to survive", "Neurons do not rely on external factors once born", "Neurotrophic factors cause immediate neuronal death", "All neurons receive equal neurotrophic support regardless of connections formed"],
+     "correct": "Neurons that establish effective connections obtain more neurotrophic factors and are more likely to survive",
+     "explanation": "The neurotrophic hypothesis posits that neurons compete for limited neurotrophic factors. Those that establish effective connections obtain more and are more likely to survive."},
+    {"topic": "Neurodevelopmental Disorders",
+     "q": "When does neurone production (neurogenesis) begin in the embryo?",
+     "options": ["Embryonic day 42 (E42)", "At birth", "At the onset of adolescence", "Only in adulthood in the hippocampus"],
+     "correct": "Embryonic day 42 (E42)",
+     "explanation": "Neurone production begins in the embryonic period on embryonic day 42 (E42) and continues through mid-gestation in most brain areas."},
+    {"topic": "Neurodevelopmental Disorders",
+     "q": "Which of the following is a primary role of oligodendrocytes/myelination?",
+     "options": ["Prune excess synapses during infancy", "Generate action potentials in axons", "Improve electrical conductance and synthesise trophic factors", "Direct migration of neurons from the ventricular zone"],
+     "correct": "Improve electrical conductance and synthesise trophic factors",
+     "explanation": "Oligodendrocytes form myelin around axons which improves conduction velocity and they also synthesise trophic factors that help maintain axonal health."},
+    {"topic": "Neurodevelopmental Disorders",
+     "q": "Which of these is listed as a category of neurodevelopmental disorders?",
+     "options": ["Chronic obstructive pulmonary disease", "Myocardial infarction", "Alzheimer's disease", "Autism spectrum disorders"],
+     "correct": "Autism spectrum disorders",
+     "explanation": "The lecture lists autism spectrum disorders among the categories of neurodevelopmental disorders alongside intellectual disability, specific learning disorders and motor disorders."},
+    {"topic": "Neurodevelopmental Disorders",
+     "q": "Neurogenesis in adulthood continues (to a limited degree) in which brain regions?",
+     "options": ["Thalamus and basal ganglia", "Hippocampus and olfactory bulb", "Brainstem nuclei and spinal cord", "Cerebral cortex and cerebellum"],
+     "correct": "Hippocampus and olfactory bulb",
+     "explanation": "Postnatal and limited adult neurogenesis persists in the hippocampus (dentate gyrus) and the olfactory bulb."},
+
+    # ── NEUROPHARMACOLOGY (10) ─────────────────────────────────────────────────
+    {"topic": "Neuropharmacology",
+     "q": "What is the primary function of a neuron?",
+     "options": ["Store neurotransmitters", "Produce hormones", "Receive, process, and transmit electrical signals", "Regulate blood flow"],
+     "correct": "Receive, process, and transmit electrical signals",
+     "explanation": "The primary function of a neuron is to receive, process and transmit electrical signals, enabling communication throughout the nervous system."},
+    {"topic": "Neuropharmacology",
+     "q": "Synaptic communication between neurons is primarily:",
+     "options": ["Mechanical", "Electrical only", "Chemical only", "Electrochemical"],
+     "correct": "Electrochemical",
+     "explanation": "Synaptic communication is electrochemical — electrical signals (action potentials) trigger chemical neurotransmitter release across the synapse."},
+    {"topic": "Neuropharmacology",
+     "q": "What triggers neurotransmitter release from the presynaptic neuron?",
+     "options": ["Receptor binding", "Action potential", "Enzyme activity", "Ion depletion"],
+     "correct": "Action potential",
+     "explanation": "An action potential arriving at the presynaptic terminal triggers calcium influx which causes synaptic vesicles to fuse with the membrane and release neurotransmitter."},
+    {"topic": "Neuropharmacology",
+     "q": "Neurotransmitters are stored in:",
+     "options": ["Lysosomes", "Synaptic vesicles", "Mitochondria", "Nucleus"],
+     "correct": "Synaptic vesicles",
+     "explanation": "Neurotransmitters are packaged and stored in synaptic vesicles within the presynaptic terminal ready for release."},
+    {"topic": "Neuropharmacology",
+     "q": "Ionotropic receptors are best described as:",
+     "options": ["G-protein coupled receptors", "Enzyme-linked receptors", "Ligand-gated ion channels", "Nuclear receptors"],
+     "correct": "Ligand-gated ion channels",
+     "explanation": "Ionotropic receptors are ligand-gated ion channels — binding of a neurotransmitter directly opens the channel, producing fast synaptic responses."},
+    {"topic": "Neuropharmacology",
+     "q": "Which ion is typically involved in inhibitory neurotransmission (e.g. GABA-A)?",
+     "options": ["Sodium (Na+)", "Potassium (K+)", "Chloride (Cl-)", "Calcium (Ca2+)"],
+     "correct": "Chloride (Cl-)",
+     "explanation": "GABA-A receptors are chloride channels. Cl- influx hyperpolarises the postsynaptic membrane, making it less likely to fire."},
+    {"topic": "Neuropharmacology",
+     "q": "Metabotropic receptors differ from ionotropic receptors because they:",
+     "options": ["Act faster", "Directly open ion channels", "Use second messenger systems", "Are only found in the periphery"],
+     "correct": "Use second messenger systems",
+     "explanation": "Metabotropic receptors are G-protein coupled and act via second messenger cascades, producing slower but longer-lasting effects compared to ionotropic receptors."},
+    {"topic": "Neuropharmacology",
+     "q": "The mesolimbic pathway connects:",
+     "options": ["Substantia nigra to striatum", "VTA to nucleus accumbens", "Cortex to thalamus", "Hippocampus to amygdala"],
+     "correct": "VTA to nucleus accumbens",
+     "explanation": "The mesolimbic dopamine pathway runs from the ventral tegmental area (VTA) to the nucleus accumbens and is strongly associated with reward and motivation."},
+    {"topic": "Neuropharmacology",
+     "q": "How does cocaine primarily exert its effect on dopamine?",
+     "options": ["Inhibits dopamine synthesis", "Blocks dopamine receptors", "Enhances dopamine reuptake", "Inhibits dopamine reuptake"],
+     "correct": "Inhibits dopamine reuptake",
+     "explanation": "Cocaine blocks the dopamine transporter (DAT), preventing reuptake of dopamine into the presynaptic terminal and increasing dopamine in the synapse."},
+    {"topic": "Neuropharmacology",
+     "q": "Which dopaminergic pathway is most associated with reward?",
+     "options": ["Nigrostriatal", "Mesolimbic", "Mesocortical", "Tuberoinfundibular"],
+     "correct": "Mesolimbic",
+     "explanation": "The mesolimbic pathway (VTA to nucleus accumbens) is the primary reward pathway and is implicated in addiction and motivated behaviour."},
+
+    # ── MEMORY DISORDERS (10) ──────────────────────────────────────────────────
+    {"topic": "Memory Disorders",
+     "q": "People with retrograde amnesia:",
+     "options": ["Make too many memories", "Can't remember things from before the trauma", "Can't remember things from after the trauma", "Have completely lost their memory"],
+     "correct": "Can't remember things from before the trauma",
+     "explanation": "Retrograde amnesia is the inability to recall memories from before the traumatic event, in contrast to anterograde amnesia which affects formation of new memories."},
+    {"topic": "Memory Disorders",
+     "q": "Which two pathological hallmarks define Alzheimer's disease?",
+     "options": ["Lewy bodies and neuronal loss", "Amyloid plaques and neurofibrillary tangles", "Demyelination and axonal loss", "Vascular infarcts and gliosis"],
+     "correct": "Amyloid plaques and neurofibrillary tangles",
+     "explanation": "Alzheimer's disease is defined pathologically by extracellular amyloid-beta plaques and intracellular neurofibrillary tangles composed of hyperphosphorylated tau."},
+    {"topic": "Memory Disorders",
+     "q": "Beta-amyloid is derived from:",
+     "options": ["Tau protein", "Amyloid precursor protein (APP)", "Presenilin", "ApoE"],
+     "correct": "Amyloid precursor protein (APP)",
+     "explanation": "Beta-amyloid peptides are produced by sequential cleavage of amyloid precursor protein (APP) by beta-secretase and gamma-secretase."},
+    {"topic": "Memory Disorders",
+     "q": "Neurofibrillary tangles consist of:",
+     "options": ["Misfolded alpha-synuclein", "Aggregated beta-amyloid", "Hyperphosphorylated tau", "Ubiquitin"],
+     "correct": "Hyperphosphorylated tau",
+     "explanation": "Neurofibrillary tangles are composed of hyperphosphorylated tau protein that has collapsed into insoluble filaments inside neurons."},
+    {"topic": "Memory Disorders",
+     "q": "Which brain region is most affected early in Alzheimer's disease?",
+     "options": ["Cerebellum", "Brainstem", "Hippocampus", "Occipital cortex"],
+     "correct": "Hippocampus",
+     "explanation": "The hippocampus is one of the first brain regions affected in Alzheimer's disease, explaining why episodic memory loss is typically the earliest symptom."},
+    {"topic": "Memory Disorders",
+     "q": "The primary neurotransmitter deficit in Alzheimer's disease is:",
+     "options": ["Dopamine", "Serotonin", "Acetylcholine", "Glutamate"],
+     "correct": "Acetylcholine",
+     "explanation": "Alzheimer's disease is characterised by loss of cholinergic neurons in the basal forebrain, leading to reduced acetylcholine — the basis for cholinesterase inhibitor treatments."},
+    {"topic": "Memory Disorders",
+     "q": "What is the role of beta-secretase and gamma-secretase in Alzheimer's disease?",
+     "options": ["Degrading tau protein", "Producing beta-amyloid from APP", "Enhancing synaptic transmission", "Removing plaques"],
+     "correct": "Producing beta-amyloid from APP",
+     "explanation": "Beta-secretase and gamma-secretase cleave amyloid precursor protein (APP) to generate amyloidogenic beta-amyloid fragments."},
+    {"topic": "Memory Disorders",
+     "q": "Which genetic risk factor is most strongly associated with late-onset Alzheimer's disease?",
+     "options": ["APP mutation", "Presenilin-1 mutation", "APOE e4 allele", "Tau mutation"],
+     "correct": "APOE e4 allele",
+     "explanation": "The APOE e4 allele is the strongest known genetic risk factor for late-onset Alzheimer's disease, increasing risk significantly compared to the e3 allele."},
+    {"topic": "Memory Disorders",
+     "q": "Tau pathology progression in Alzheimer's disease follows:",
+     "options": ["Random distribution", "Braak staging", "Hoehn and Yahr staging", "TNM staging"],
+     "correct": "Braak staging",
+     "explanation": "Tau pathology spreads in a predictable pattern through the brain, described by Braak staging — from entorhinal cortex through hippocampus to neocortex."},
+    {"topic": "Memory Disorders",
+     "q": "Alzheimer's disease is an inevitable part of ageing.",
+     "options": ["True", "False"],
+     "correct": "False",
+     "explanation": "Alzheimer's disease is not an inevitable part of ageing. While age is the greatest risk factor, many people live into old age without developing it."},
+
+    # ── MOVEMENT DISORDERS (10) ───────────────────────────────────────────────
+    {"topic": "Movement Disorders",
+     "q": "Activation of the primary motor cortex elicits all movement unilaterally (on the same side).",
+     "options": ["True", "False"],
+     "correct": "False",
+     "explanation": "The primary motor cortex controls movement contralaterally — activation of the left motor cortex produces movement on the right side of the body, and vice versa."},
+    {"topic": "Movement Disorders",
+     "q": "The neurotransmitter used at the motor endplate (motor neurone-muscle junction) is:",
+     "options": ["Noradrenaline", "Glutamate", "GABA", "Acetylcholine"],
+     "correct": "Acetylcholine",
+     "explanation": "Acetylcholine is released by motor neurons at the neuromuscular junction and binds to nicotinic receptors on the motor end plate to trigger muscle contraction."},
+    {"topic": "Movement Disorders",
+     "q": "What types of receptors are present on the motor end plate?",
+     "options": ["Muscarinic", "Nicotinic", "Beta adrenergic", "NMDA"],
+     "correct": "Nicotinic",
+     "explanation": "The motor end plate contains nicotinic acetylcholine receptors (nAChRs) — ionotropic receptors that mediate fast excitatory transmission at the NMJ."},
+    {"topic": "Movement Disorders",
+     "q": "Which of the following is NOT part of the nigro-striatal pathway?",
+     "options": ["Putamen", "Substantia nigra", "Caudate", "Amygdala"],
+     "correct": "Amygdala",
+     "explanation": "The nigrostriatal pathway connects the substantia nigra pars compacta to the striatum (caudate and putamen). The amygdala is part of the limbic system."},
+    {"topic": "Movement Disorders",
+     "q": "The cerebellum contains areas mapped to parts of the body.",
+     "options": ["True", "False"],
+     "correct": "True",
+     "explanation": "The cerebellum has a somatotopic organisation with areas mapped to different body parts, similar to the motor and somatosensory homunculi of the cortex."},
+    {"topic": "Movement Disorders",
+     "q": "Movement occurs in a sequential pattern dictated by hierarchical organisation of the nervous system. Which area is important in the timing and balance, correcting movement errors?",
+     "options": ["Cerebellum", "Primary motor cortex", "Basal ganglia", "Primary somatosensory cortex"],
+     "correct": "Cerebellum",
+     "explanation": "The cerebellum is critical for timing, coordination and error correction of movement, receiving ongoing feedback to fine-tune motor output."},
+    {"topic": "Movement Disorders",
+     "q": "The extrapyramidal tracts of the motor system cause voluntary (conscious) actions.",
+     "options": ["True", "False"],
+     "correct": "False",
+     "explanation": "Voluntary conscious actions are mediated by the pyramidal (corticospinal) tract. The extrapyramidal system regulates muscle tone, posture and involuntary movement."},
+    {"topic": "Movement Disorders",
+     "q": "Haptic-proprioceptive axons ascend the spinal cord on the same side of the body.",
+     "options": ["True", "False"],
+     "correct": "True",
+     "explanation": "Proprioceptive and fine touch (haptic) information travels in the dorsal columns and ascends ipsilaterally before crossing at the level of the medulla."},
+    {"topic": "Movement Disorders",
+     "q": "Tourette's syndrome is primarily associated with overactivation of which brain area?",
+     "options": ["Basal ganglia", "Cerebellum", "Primary motor cortex", "Thalamus"],
+     "correct": "Basal ganglia",
+     "explanation": "Tourette's syndrome is associated with dysfunction and overactivation of the basal ganglia, contributing to the characteristic tics and involuntary movements."},
+    {"topic": "Movement Disorders",
+     "q": "Progressive supranuclear palsy, characterised by loss of balance, slowing movement, difficulty moving the eyes and dementia, is classed as a hyperkinetic movement disorder.",
+     "options": ["True", "False"],
+     "correct": "False",
+     "explanation": "Progressive supranuclear palsy is a hypokinetic (not hyperkinetic) movement disorder — it features slowing and rigidity rather than excess involuntary movement."},
+
+    # ── VISUAL, AUDITORY & LANGUAGE DISORDERS (10) ────────────────────────────
+    {"topic": "Visual, Auditory & Language Disorders",
+     "q": "Which thalamic nucleus is highlighted as playing a major role in attention and sensory filtering?",
+     "options": ["Lateral geniculate nucleus", "Medial geniculate body", "Pulvinar nucleus", "Caudate nucleus"],
+     "correct": "Pulvinar nucleus",
+     "explanation": "The pulvinar nucleus of the thalamus is a key structure involved in filtering out unnecessary sensory information and attention control — illustrating the 'cocktail party' effect."},
+    {"topic": "Visual, Auditory & Language Disorders",
+     "q": "Which layer of the primary visual cortex is described as myelinated and forming the 'line of Gennari'?",
+     "options": ["Layer 2", "Layer 4", "Layer 6", "Layer 1"],
+     "correct": "Layer 4",
+     "explanation": "Layer 4 of the primary visual cortex (V1) is myelinated and contains the line of Gennari, a distinguishing anatomical feature visible to the naked eye."},
+    {"topic": "Visual, Auditory & Language Disorders",
+     "q": "Damage to the fusiform gyrus is most strongly associated with which clinical deficit?",
+     "options": ["Alexia without agraphia", "Motor apraxia", "Auditory agnosia", "Prosopagnosia (face blindness)"],
+     "correct": "Prosopagnosia (face blindness)",
+     "explanation": "Damage to the fusiform gyrus is thought to lead to prosopagnosia (face blindness), reflecting the fusiform area's role in face and body recognition."},
+    {"topic": "Visual, Auditory & Language Disorders",
+     "q": "Blindsight — preserved visual responses without conscious perception — typically results from lesions where?",
+     "options": ["Superior colliculus only", "Primary visual cortex (V1)", "Medial geniculate body", "Inferior temporal cortex"],
+     "correct": "Primary visual cortex (V1)",
+     "explanation": "Blindsight occurs in patients with lesions to the primary visual cortex (V1), allowing non-conscious visual pathways to mediate some performance despite lack of conscious sight."},
+    {"topic": "Visual, Auditory & Language Disorders",
+     "q": "Which neurotransmitter do hair cells in the cochlea release to signal to auditory nerve fibres?",
+     "options": ["Dopamine", "GABA", "Glutamate", "Acetylcholine"],
+     "correct": "Glutamate",
+     "explanation": "Hair cells release glutamate as their principal neurotransmitter when they transduce mechanical stimulation into chemical signals at the synapse with auditory nerve fibres."},
+    {"topic": "Visual, Auditory & Language Disorders",
+     "q": "In the 'two streams' hypothesis of visual processing, which stream projects to the temporal cortex and is primarily involved in object recognition ('what')?",
+     "options": ["Retinotectal pathway", "Lateral geniculate pathway", "Dorsal stream (to parietal cortex)", "Ventral stream (to temporal cortex)"],
+     "correct": "Ventral stream (to temporal cortex)",
+     "explanation": "The ventral stream runs V1 → V2 → V4 → temporal (inferior and fusiform) cortex and is specialised for object recognition — the 'what' pathway."},
+    {"topic": "Visual, Auditory & Language Disorders",
+     "q": "Which feature best characterises Wernicke's aphasia?",
+     "options": ["Isolated speech apraxia without language impairment", "Non-fluent, effortful speech with preserved comprehension", "Fluent speech with poor comprehension (receptive aphasia)", "Pure word deafness with preserved speech production"],
+     "correct": "Fluent speech with poor comprehension (receptive aphasia)",
+     "explanation": "Wernicke's aphasia produces fluent, effortless speech with intact syntax but severe difficulty understanding spoken and written language."},
+    {"topic": "Visual, Auditory & Language Disorders",
+     "q": "Which inner ear structure is described as the receptor organ that transduces vibrations into electrochemical signals?",
+     "options": ["Organ of Corti", "Eustachian tube", "Tympanic membrane", "Oval window"],
+     "correct": "Organ of Corti",
+     "explanation": "The Organ of Corti, located within the cochlear duct, is the receptor organ for hearing that converts mechanical vibrations into electrical nerve signals via hair cell movement."},
+    {"topic": "Visual, Auditory & Language Disorders",
+     "q": "Charles Bonnet syndrome is primarily associated with which clinical circumstance?",
+     "options": ["Olfactory hallucinations due to temporal lobe epilepsy", "Tactile hallucinations in peripheral neuropathy", "Auditory hallucinations in schizophrenia", "Complex visual hallucinations in visually impaired individuals"],
+     "correct": "Complex visual hallucinations in visually impaired individuals",
+     "explanation": "Charles Bonnet syndrome describes vivid, complex visual hallucinations occurring in otherwise psychologically normal individuals with significant visual impairment."},
+    {"topic": "Visual, Auditory & Language Disorders",
+     "q": "Dementia with Lewy bodies (DLB) is pathologically defined by intracellular inclusions composed of which protein?",
+     "options": ["Alpha-synuclein", "TDP-43", "Amyloid-beta", "Tau protein"],
+     "correct": "Alpha-synuclein",
+     "explanation": "DLB is defined by alpha-synuclein-containing intracellular inclusions (Lewy bodies). Visual hallucinations are a core clinical feature of DLB."},
+
+    # ── AFFECTIVE DISORDERS (10) ──────────────────────────────────────────────
+    {"topic": "Affective Disorders",
+     "q": "Which of the following best defines an affective disorder?",
+     "options": ["A disorder caused by exclusive neurotransmitter loss", "A disturbance of emotion severe enough to impair functioning", "A condition resulting only from genetic mutations", "A disorder characterised only by mania"],
+     "correct": "A disturbance of emotion severe enough to impair functioning",
+     "explanation": "Affective disorders are defined by a disturbance of mood or emotion that is severe enough to impair an individual's daily functioning and quality of life."},
+    {"topic": "Affective Disorders",
+     "q": "How many symptoms (out of nine) must be present for at least two weeks to diagnose Major Depressive Disorder?",
+     "options": ["Three", "Five", "Seven", "Nine"],
+     "correct": "Five",
+     "explanation": "DSM criteria require at least five of nine specified symptoms to be present for at least two weeks for a diagnosis of Major Depressive Disorder."},
+    {"topic": "Affective Disorders",
+     "q": "The monoamine hypothesis of depression suggests depression results from a deficiency in:",
+     "options": ["GABAergic inhibition", "Glutamatergic signalling", "Brain monoaminergic activity", "Neuropeptide synthesis"],
+     "correct": "Brain monoaminergic activity",
+     "explanation": "The monoamine hypothesis proposes that depression results from reduced activity of monoamine neurotransmitters (serotonin, noradrenaline, dopamine) in the brain."},
+    {"topic": "Affective Disorders",
+     "q": "Which neurotransmitters are most associated with mood regulation?",
+     "options": ["GABA and glutamate", "Serotonin and noradrenaline", "Dopamine and acetylcholine", "Phenethylamine and histamine"],
+     "correct": "Serotonin and noradrenaline",
+     "explanation": "Serotonin and noradrenaline are the neurotransmitters most closely associated with mood regulation and are the primary targets of antidepressant medications."},
+    {"topic": "Affective Disorders",
+     "q": "A major problem with the monoamine hypothesis is:",
+     "options": ["Antidepressants work immediately", "Tryptophan depletion always induces depression in healthy people", "Therapeutic latency despite rapid synaptic neurochemical effects", "Monoamines do not affect mood"],
+     "correct": "Therapeutic latency despite rapid synaptic neurochemical effects",
+     "explanation": "Antidepressants raise synaptic monoamine levels within hours, yet clinical benefit takes weeks — this therapeutic latency is a major challenge to the simple monoamine hypothesis."},
+    {"topic": "Affective Disorders",
+     "q": "Metabotropic receptors are characterised by:",
+     "options": ["Direct ion channel opening upon ligand binding", "G-protein-linked signalling and slower, longer-lasting effect", "Exclusive expression in the spinal cord", "Activation only by synthetic drugs"],
+     "correct": "G-protein-linked signalling and slower, longer-lasting effect",
+     "explanation": "Metabotropic receptors are G-protein coupled receptors that activate second messenger cascades, producing slower but more prolonged effects than ionotropic receptors."},
+    {"topic": "Affective Disorders",
+     "q": "Prolonged activation of the HPA axis can cause:",
+     "options": ["Cerebellar hypertrophy", "Hippocampal atrophy", "Increased BDNF expression", "Reduced glucocorticoid level"],
+     "correct": "Hippocampal atrophy",
+     "explanation": "Chronic stress and prolonged HPA axis activation leads to elevated cortisol, which can cause hippocampal atrophy due to glucocorticoid-mediated neurotoxicity."},
+    {"topic": "Affective Disorders",
+     "q": "The neurotrophic hypothesis of depression emphasises the role of:",
+     "options": ["Loss of dopamine in the basal ganglia", "Reduced BDNF and impaired neuronal plasticity", "Excess glutamatergic excitation", "Abnormalities in ionotropic receptors"],
+     "correct": "Reduced BDNF and impaired neuronal plasticity",
+     "explanation": "The neurotrophic hypothesis proposes that depression involves reduced brain-derived neurotrophic factor (BDNF) and impaired synaptic plasticity, particularly in the hippocampus."},
+    {"topic": "Affective Disorders",
+     "q": "Late-onset depression (>60 years) is associated with:",
+     "options": ["Increased frontal cortical volume", "Better treatment response than early-onset cases", "Structural brain changes including hippocampal volume reduction", "Absence of cerebrovascular risk factors"],
+     "correct": "Structural brain changes including hippocampal volume reduction",
+     "explanation": "Late-onset depression is associated with structural brain changes including hippocampal volume reduction and white matter changes, often linked to cerebrovascular risk factors."},
+    {"topic": "Affective Disorders",
+     "q": "Which treatment is now recognised as effective for treatment-resistant depression, acting via NMDA receptor antagonism?",
+     "options": ["Fluoxetine", "Reboxetine", "Memantine", "Ketamine"],
+     "correct": "Ketamine",
+     "explanation": "Ketamine, an NMDA receptor antagonist, has been shown to produce rapid antidepressant effects in treatment-resistant depression, often within hours of administration."},
+
+    # ── SCHIZOPHRENIA (10) ────────────────────────────────────────────────────
+    {"topic": "Schizophrenia",
+     "q": "The literal translation of 'schizophrenia' refers to:",
+     "options": ["Split personality", "Splitting of the mind", "Broken emotions", "Fragmented memories"],
+     "correct": "Splitting of the mind",
+     "explanation": "The term schizophrenia comes from the Greek words 'schizo' (split) and 'phren' (mind) — referring to a splitting of mental functions, not a split personality."},
+    {"topic": "Schizophrenia",
+     "q": "The lifetime prevalence of schizophrenia is approximately:",
+     "options": ["0.1%", "1%", "5%", "10%"],
+     "correct": "1%",
+     "explanation": "Schizophrenia affects approximately 1% of the population worldwide, making it a relatively rare but severely disabling condition."},
+    {"topic": "Schizophrenia",
+     "q": "Positive symptoms of schizophrenia include:",
+     "options": ["Flat affect", "Avolition", "Delusions and hallucinations", "Social withdrawal"],
+     "correct": "Delusions and hallucinations",
+     "explanation": "Positive symptoms represent additions to normal experience — including delusions, hallucinations and disorganised speech. Flat affect, avolition and social withdrawal are negative symptoms."},
+    {"topic": "Schizophrenia",
+     "q": "Which type of hallucination is most common in schizophrenia?",
+     "options": ["Visual", "Tactile", "Olfactory", "Auditory"],
+     "correct": "Auditory",
+     "explanation": "Auditory hallucinations — typically hearing voices — are the most common type of hallucination in schizophrenia, occurring in around 70% of patients."},
+    {"topic": "Schizophrenia",
+     "q": "Negative symptoms include all of the following EXCEPT:",
+     "options": ["Lack of emotion", "Reduced motivation", "Delusional beliefs", "Social withdrawal"],
+     "correct": "Delusional beliefs",
+     "explanation": "Delusional beliefs are positive symptoms. Negative symptoms reflect reductions in normal functioning — such as flat affect, avolition, alogia and social withdrawal."},
+    {"topic": "Schizophrenia",
+     "q": "Cognitive symptoms of schizophrenia typically include:",
+     "options": ["Excessive emotional expression", "Disorganised thinking and poor memory", "Repetitive motor movements", "Grandiose delusions"],
+     "correct": "Disorganised thinking and poor memory",
+     "explanation": "Cognitive symptoms of schizophrenia include disorganised thinking, impaired working memory, poor attention and executive dysfunction."},
+    {"topic": "Schizophrenia",
+     "q": "Catatonic immobility refers to:",
+     "options": ["Rapid, disorganised speech", "Repetitive hand gestures", "Maintaining an unusual posture for long periods", "Hearing voices commanding movement"],
+     "correct": "Maintaining an unusual posture for long periods",
+     "explanation": "Catatonia involves a state of unresponsiveness or immobility, including maintaining unusual or rigid postures for extended periods."},
+    {"topic": "Schizophrenia",
+     "q": "The dopamine hypothesis suggests schizophrenia is associated with:",
+     "options": ["Low dopamine in all brain regions", "Excess dopamine activity", "Reduced serotonin levels only", "Excess norepinephrine activity"],
+     "correct": "Excess dopamine activity",
+     "explanation": "The dopamine hypothesis proposes that positive symptoms of schizophrenia result from excess dopaminergic activity, particularly in the mesolimbic pathway."},
+    {"topic": "Schizophrenia",
+     "q": "Schizophrenia is linked to structural abnormalities particularly in the:",
+     "options": ["Occipital cortex", "Prefrontal cortex", "Cerebellum", "Medulla oblongata"],
+     "correct": "Prefrontal cortex",
+     "explanation": "Schizophrenia is associated with reduced grey matter and hypofrontality in the prefrontal cortex, contributing to negative and cognitive symptoms."},
+    {"topic": "Schizophrenia",
+     "q": "Which of the following is a first-line treatment for schizophrenia?",
+     "options": ["Lithium", "Benzodiazepines", "Atypical antipsychotics", "Antidepressants"],
+     "correct": "Atypical antipsychotics",
+     "explanation": "Atypical (second-generation) antipsychotics are the first-line pharmacological treatment for schizophrenia, targeting dopamine and serotonin receptors."},
+
+    # ── DELIRIUM (10) ─────────────────────────────────────────────────────────
+    {"topic": "Delirium",
+     "q": "Which of the following best defines delirium?",
+     "options": ["A chronic, progressive decline in cognitive function", "An acute confusional state with fluctuating consciousness", "A primary psychiatric disorder characterised by hallucination", "A stable impairment of memory due to ageing"],
+     "correct": "An acute confusional state with fluctuating consciousness",
+     "explanation": "Delirium is an acute neuropsychiatric syndrome characterised by disturbed attention, awareness and cognition that develops rapidly and tends to fluctuate."},
+    {"topic": "Delirium",
+     "q": "Delirium most commonly develops over which time frame?",
+     "options": ["Months to years", "Weeks", "Hours to days", "Childhood to adulthood"],
+     "correct": "Hours to days",
+     "explanation": "Delirium develops acutely over hours to days, distinguishing it from dementia which progresses over months to years."},
+    {"topic": "Delirium",
+     "q": "An 82-year-old man becomes acutely confused following hip surgery. He is drowsy, inattentive and misses meals but does not appear agitated. Which delirium subtype is most likely?",
+     "options": ["Hyperactive delirium", "Hypoactive delirium", "Mixed delirium", "Psychotic depression"],
+     "correct": "Hypoactive delirium",
+     "explanation": "Hypoactive delirium presents with reduced activity, drowsiness and inattention without agitation — it is the most common subtype and frequently missed."},
+    {"topic": "Delirium",
+     "q": "Why is hypoactive delirium frequently under-diagnosed in hospital settings?",
+     "options": ["It occurs only in patients with dementia", "Symptoms resemble anxiety disorders", "Patients are quiet and not disruptive", "It resolves more rapidly than other subtypes"],
+     "correct": "Patients are quiet and not disruptive",
+     "explanation": "Hypoactive delirium is easily missed because patients are quiet, withdrawn and non-disruptive — unlike the more conspicuous hyperactive subtype."},
+    {"topic": "Delirium",
+     "q": "Which of the following scenarios best illustrates the concept of delirium being multifactorial?",
+     "options": ["Acute confusion caused by a single traumatic brain injury", "Delirium occurring solely due to advanced age", "A vulnerable patient developing delirium after infection and polypharmacy", "Genetic predisposition leading to early-onset delirium"],
+     "correct": "A vulnerable patient developing delirium after infection and polypharmacy",
+     "explanation": "Delirium is typically multifactorial — a predisposed patient (e.g. elderly, with cognitive impairment) develops delirium when exposed to multiple precipitating factors such as infection and polypharmacy."},
+    {"topic": "Delirium",
+     "q": "Which combination of factors would place an older patient at highest risk of developing delirium?",
+     "options": ["Female sex, good vision, no comorbidities", "Male sex, visual impairment, polypharmacy", "Young age, dehydration, recent surgery", "Regular medication review and mobilisation"],
+     "correct": "Male sex, visual impairment, polypharmacy",
+     "explanation": "Older male patients with sensory impairment (especially visual) and polypharmacy are at particularly high risk of delirium in hospital settings."},
+    {"topic": "Delirium",
+     "q": "Which mechanism best explains how anticholinergic drugs contribute to delirium?",
+     "options": ["Increasing dopamine activity in the limbic system", "Blocking GABA receptors in the cortex", "Inhibiting acetylcholine-mediated cognitive function", "Enhancing neuroinflammatory clearance"],
+     "correct": "Inhibiting acetylcholine-mediated cognitive function",
+     "explanation": "Anticholinergic drugs block muscarinic receptors, reducing acetylcholine-mediated signalling critical for attention and memory — a key mechanism in drug-induced delirium."},
+    {"topic": "Delirium",
+     "q": "Which pathophysiological process is most strongly associated with delirium?",
+     "options": ["Demyelination of central axons", "Neurotransmitter imbalance and inflammation", "Selective hippocampal neuronal loss", "Alpha-synuclein aggregation"],
+     "correct": "Neurotransmitter imbalance and inflammation",
+     "explanation": "Delirium is most strongly linked to neurotransmitter imbalance (particularly cholinergic deficiency and dopaminergic excess) combined with neuroinflammation."},
+    {"topic": "Delirium",
+     "q": "Which statement best reflects current understanding of the relationship between delirium and dementia?",
+     "options": ["Delirium only occurs in patients with established dementia", "Delirium has no long-term cognitive consequences", "Delirium significantly increases the risk of future dementia", "Dementia protects against delirium"],
+     "correct": "Delirium significantly increases the risk of future dementia",
+     "explanation": "Delirium is now recognised as a significant independent risk factor for subsequent dementia, even in those without prior cognitive impairment."},
+    {"topic": "Delirium",
+     "q": "Which mechanism may explain the high prevalence of delirium in severe COVID-19?",
+     "options": ["Chronic neurodegeneration", "Direct psychiatric toxicity of antivirals", "Reduced cerebral blood flow due to ageing alone", "Combined effects of hypoxia, inflammation and metabolic disturbance"],
+     "correct": "Combined effects of hypoxia, inflammation and metabolic disturbance",
+     "explanation": "Severe COVID-19 causes delirium through multiple mechanisms including hypoxia, systemic inflammation, metabolic disturbance and direct neurological effects."},
+
+    # ── PERIPHERAL NERVOUS SYSTEM (10) ────────────────────────────────────────
+    {"topic": "Peripheral Nervous System",
+     "q": "Which division of the nervous system is responsible for non-conscious control of visceral functions?",
+     "options": ["Central nervous system", "Somatic nervous system", "Autonomic nervous system", "Sensory nervous system"],
+     "correct": "Autonomic nervous system",
+     "explanation": "The autonomic nervous system controls involuntary visceral functions including heart rate, digestion, respiration and glandular secretion."},
+    {"topic": "Peripheral Nervous System",
+     "q": "Which connective tissue layer surrounds individual nerve fibres within a peripheral nerve?",
+     "options": ["Epineurium", "Perineurium", "Endoneurium", "Myelin sheath"],
+     "correct": "Endoneurium",
+     "explanation": "The endoneurium surrounds individual nerve fibres (axons), the perineurium surrounds fascicles, and the epineurium surrounds the entire nerve trunk."},
+    {"topic": "Peripheral Nervous System",
+     "q": "Which cranial nerve is primarily responsible for hearing and balance?",
+     "options": ["Facial (VII)", "Vestibulocochlear (VIII)", "Glossopharyngeal (IX)", "Vagus (X)"],
+     "correct": "Vestibulocochlear (VIII)",
+     "explanation": "The vestibulocochlear nerve (CN VIII) has two divisions — the cochlear nerve for hearing and the vestibular nerve for balance and spatial orientation."},
+    {"topic": "Peripheral Nervous System",
+     "q": "Spinal nerves are described as 'mixed nerves' because they contain:",
+     "options": ["Only sensory fibres", "Only motor fibres", "Sensory and autonomic fibres only", "Both sensory and motor fibres"],
+     "correct": "Both sensory and motor fibres",
+     "explanation": "Spinal nerves are mixed nerves formed by the dorsal (sensory) and ventral (motor) roots joining together, carrying both afferent and efferent signals."},
+    {"topic": "Peripheral Nervous System",
+     "q": "What neurotransmitter is released at the neuromuscular junction?",
+     "options": ["Dopamine", "Noradrenaline", "Acetylcholine", "Glutamate"],
+     "correct": "Acetylcholine",
+     "explanation": "Acetylcholine is released by alpha-motor neurons at the neuromuscular junction, binding to nicotinic receptors to trigger muscle contraction."},
+    {"topic": "Peripheral Nervous System",
+     "q": "The parasympathetic nervous system is best described as:",
+     "options": ["'Fight or flight'", "'Rest and digest'", "Responsible for voluntary movement", "Controlling only spinal reflexes"],
+     "correct": "'Rest and digest'",
+     "explanation": "The parasympathetic nervous system promotes 'rest and digest' functions — slowing heart rate, stimulating digestion and conserving energy."},
+    {"topic": "Peripheral Nervous System",
+     "q": "Which disorder is an acute autoimmune demyelinating polyneuropathy, often triggered by infection such as Campylobacter jejuni?",
+     "options": ["Charcot-Marie-Tooth disease", "Guillain-Barre syndrome", "Amyotrophic lateral sclerosis", "Diabetic neuropathy"],
+     "correct": "Guillain-Barre syndrome",
+     "explanation": "Guillain-Barre syndrome is an acute autoimmune polyneuropathy often triggered by infection. Campylobacter jejuni is a classic preceding infection due to molecular mimicry."},
+    {"topic": "Peripheral Nervous System",
+     "q": "Which peripheral nervous system disorder is most strongly associated with chronic hyperglycaemia?",
+     "options": ["Guillain-Barre syndrome", "Polio", "Diabetes-associated neuropathy", "Myasthenia gravis"],
+     "correct": "Diabetes-associated neuropathy",
+     "explanation": "Chronic hyperglycaemia causes peripheral nerve damage through multiple mechanisms including oxidative stress, advanced glycation and reduced nerve blood supply."},
+    {"topic": "Peripheral Nervous System",
+     "q": "Amyotrophic lateral sclerosis (ALS) primarily affects which type of neurons?",
+     "options": ["Sensory neurons only", "Autonomic neurons", "Upper and lower motor neurons", "Peripheral sensory neurons"],
+     "correct": "Upper and lower motor neurons",
+     "explanation": "ALS selectively degenerates both upper motor neurons (cortex/corticospinal tract) and lower motor neurons (brainstem/spinal cord), causing progressive muscle weakness and wasting."},
+    {"topic": "Peripheral Nervous System",
+     "q": "Which pathological finding is characteristic of ALS?",
+     "options": ["Loss of oligodendrocytes and remyelination", "Deposition of amyloid plaques", "TDP-43-containing intracellular inclusions", "Antibodies against acetylcholine receptors"],
+     "correct": "TDP-43-containing intracellular inclusions",
+     "explanation": "TDP-43 proteinopathy — with cytoplasmic TDP-43-containing inclusions in motor neurons — is the pathological hallmark of the vast majority of ALS cases."},
+]
+
+# ══════════════════════════════════════════════════════════════════════════════
 # DATA — CRANIAL NERVES
 # ══════════════════════════════════════════════════════════════════════════════
 # Each entry: number (Roman), name, type, function(s), mnemonic cue, clinical note
@@ -712,9 +1251,10 @@ def build_report_pdf():
     match_best = max((e["score_pct"] for e in st.session_state.log_match), default=None)
     quiz_best  = max((e["score_pct"] for e in st.session_state.log_quiz),  default=None)
     cn_best    = max((e["score_pct"] for e in st.session_state.log_cn),    default=None)
-    bests      = [x for x in [seq_best, match_best, quiz_best, cn_best] if x is not None]
+    lq_best    = max((e["score_pct"] for e in st.session_state.log_lq),    default=None)
+    bests      = [x for x in [seq_best, match_best, quiz_best, cn_best, lq_best] if x is not None]
     overall    = int(sum(bests) / len(bests)) if bests else None
-    total_att  = sum(len(st.session_state[k]) for k in ("log_seq","log_match","log_quiz","log_cn"))
+    total_att  = sum(len(st.session_state[k]) for k in ("log_seq","log_match","log_quiz","log_cn","log_lq"))
 
     buf = io.BytesIO()
     doc = SimpleDocTemplate(buf, pagesize=A4,
@@ -795,11 +1335,12 @@ def build_report_pdf():
     story.append(sum_tbl); story.append(Spacer(1,6))
 
     game_tbl = Table([[
-        _game_cell("", "Sequencing",     seq_best,   len(st.session_state.log_seq)),
-        _game_cell("", "Matching",       match_best, len(st.session_state.log_match)),
-        _game_cell("", "True/False",     quiz_best,  len(st.session_state.log_quiz)),
-        _game_cell("", "Cranial Nerves", cn_best,    len(st.session_state.log_cn)),
-    ]], colWidths=[doc.width/4]*4)
+        _game_cell("", "Sequencing",      seq_best,   len(st.session_state.log_seq)),
+        _game_cell("", "Matching",        match_best, len(st.session_state.log_match)),
+        _game_cell("", "True/False",      quiz_best,  len(st.session_state.log_quiz)),
+        _game_cell("", "Cranial Nerves",  cn_best,    len(st.session_state.log_cn)),
+        _game_cell("", "Lecture Quizzes", lq_best,    len(st.session_state.log_lq)),
+    ]], colWidths=[doc.width/5]*5)
     game_tbl.setStyle(TableStyle([("BACKGROUND",(0,0),(-1,-1),WHITE),
         ("BOX",(0,0),(-1,-1),0.5,BDR),("INNERGRID",(0,0),(-1,-1),0.5,BDR),
         ("TOPPADDING",(0,0),(-1,-1),10),("BOTTOMPADDING",(0,0),(-1,-1),10),
@@ -910,6 +1451,27 @@ def build_report_pdf():
                 _miss_p(miss),
             ])
         story.append(_make_table(rows, cw))
+    story.append(Spacer(1,10))
+
+    # ── Lecture Quizzes ──
+    _sec("Lecture Quizzes — Attempt Log")
+    if not st.session_state.log_lq:
+        story.append(Paragraph("No attempts recorded yet.", sSmall))
+    else:
+        story.append(Paragraph(f"Best: {lq_best}%  |  Rounds: {len(st.session_state.log_lq)}", sSmall))
+        story.append(Spacer(1,4))
+        cw = [12*mm, 42*mm, 18*mm, 15*mm, doc.width-12*mm-42*mm-18*mm-15*mm]
+        rows = [["#", "Topic", "Score", "Time", "Mistakes"]]
+        for i,e in enumerate(st.session_state.log_lq,1):
+            miss = [f"Q: '{_clean(q[:60])}...' → answered '{_clean(ans[:40])}'" for q,ans,_ in e["mistakes"]]
+            rows.append([
+                Paragraph(f'<b>#{i}</b><br/><font size="7" color="#64748b">{e["timestamp"]}</font>', sBody),
+                Paragraph(f'<b>{_clean(e["topic"])}</b>', sBody),
+                _score_p(e["score_pct"], e["hits"], e["n"], f"lq{i}"),
+                Paragraph(fmt_duration(e["time_secs"]), sSmall),
+                _miss_p(miss),
+            ])
+        story.append(_make_table(rows, cw))
 
     # Footer
     story.append(Spacer(1,16))
@@ -937,9 +1499,10 @@ def build_report_html():
     match_best = max((e["score_pct"] for e in st.session_state.log_match), default=None)
     quiz_best  = max((e["score_pct"] for e in st.session_state.log_quiz),  default=None)
     cn_best    = max((e["score_pct"] for e in st.session_state.log_cn),    default=None)
-    bests      = [x for x in [seq_best, match_best, quiz_best, cn_best] if x is not None]
+    lq_best    = max((e["score_pct"] for e in st.session_state.log_lq),    default=None)
+    bests      = [x for x in [seq_best, match_best, quiz_best, cn_best, lq_best] if x is not None]
     overall    = int(sum(bests)/len(bests)) if bests else None
-    total_att  = sum(len(st.session_state[k]) for k in ("log_seq","log_match","log_quiz","log_cn"))
+    total_att  = sum(len(st.session_state[k]) for k in ("log_seq","log_match","log_quiz","log_cn","log_lq"))
 
     def badge(pct):
         if pct is None: return '<span style="color:#94a3b8">No attempts</span>'
@@ -994,6 +1557,15 @@ def build_report_html():
             r += f'<tr style="border-bottom:1px solid #e2e8f0"><td style="padding:7px 9px;color:#64748b;font-size:0.82rem">#{i} {e["timestamp"]}</td><td style="padding:7px 9px"><b>{e["mode"]}</b></td><td style="padding:7px 9px;text-align:center"><span style="font-weight:700;color:{c}">{e["score_pct"]}%</span><br/><span style="font-size:0.78rem;color:#64748b">{e["hits"]}/{e["n"]}</span></td><td style="padding:7px 9px;font-size:0.8rem;color:#64748b">{fmt_duration(e["time_secs"])}</td><td style="padding:7px 9px">{miss_html}</td></tr>'
         return r
 
+    def lq_rows():
+        r = ""
+        for i,e in enumerate(st.session_state.log_lq,1):
+            c = "#16a34a" if e["score_pct"]==100 else ("#ca8a04" if e["score_pct"]>=60 else "#dc2626")
+            miss = "".join(f'<li style="color:#991b1b;font-size:0.8rem;margin:1px 0">Q: "{q[:60]}…" → chose "{ans}"</li>' for q,ans,_ in e["mistakes"])
+            miss_html = f'<ul style="margin:3px 0 0 14px;padding:0">{miss}</ul>' if miss else '<span style="color:#16a34a;font-size:0.8rem">All correct ✓</span>'
+            r += f'<tr style="border-bottom:1px solid #e2e8f0"><td style="padding:7px 9px;color:#64748b;font-size:0.82rem">#{i} {e["timestamp"]}</td><td style="padding:7px 9px"><b>{e["topic"]}</b></td><td style="padding:7px 9px;text-align:center"><span style="font-weight:700;color:{c}">{e["score_pct"]}%</span><br/><span style="font-size:0.78rem;color:#64748b">{e["hits"]}/{e["n"]}</span></td><td style="padding:7px 9px;font-size:0.8rem;color:#64748b">{fmt_duration(e["time_secs"])}</td><td style="padding:7px 9px">{miss_html}</td></tr>'
+        return r
+
     return f"""<!DOCTYPE html>
 <html lang="en"><head><meta charset="UTF-8">
 <title>Neuroscience Games — Progress Report</title>
@@ -1029,11 +1601,13 @@ body{{font-family:'Segoe UI',Arial,sans-serif;background:#f8fafc;color:#0f172a;f
   <div class="card"><div class="lbl">🔗 Matching</div>{badge(match_best)}{bar(match_best or 0,"#10b981")}<div class="sub">{len(st.session_state.log_match)} attempt(s)</div></div>
   <div class="card"><div class="lbl">🧪 True/False</div>{badge(quiz_best)}{bar(quiz_best or 0,"#8b5cf6")}<div class="sub">{len(st.session_state.log_quiz)} attempt(s)</div></div>
   <div class="card"><div class="lbl">🧠 Cranial Nerves</div>{badge(cn_best)}{bar(cn_best or 0,"#f59e0b")}<div class="sub">{len(st.session_state.log_cn)} attempt(s)</div></div>
+  <div class="card"><div class="lbl">📚 Lecture Quizzes</div>{badge(lq_best)}{bar(lq_best or 0,"#06b6d4")}<div class="sub">{len(st.session_state.log_lq)} attempt(s)</div></div>
 </div>
 <div class="section"><h2>🔢 Sequencing — Attempt Log</h2>Best: {badge(seq_best)} &nbsp; Attempts: {len(st.session_state.log_seq)}<br/><br/>{tbl(seq_rows(),["#","Topic / Difficulty","Score","Time","Mistakes"])}</div>
 <div class="section"><h2>🔗 Matching — Attempt Log</h2>Best: {badge(match_best)} &nbsp; Attempts: {len(st.session_state.log_match)}<br/><br/>{tbl(match_rows(),["#","Topic","Score","Time","Mistakes"])}</div>
 <div class="section"><h2>🧪 True or False — Attempt Log</h2>Best: {badge(quiz_best)} &nbsp; Games: {len(st.session_state.log_quiz)}<br/><br/>{tbl(quiz_rows(),["#","Score","Time","Incorrect Answers"])}</div>
 <div class="section"><h2>🧠 Cranial Nerves — Attempt Log</h2>Best: {badge(cn_best)} &nbsp; Rounds: {len(st.session_state.log_cn)}<br/><br/>{tbl(cn_rows(),["#","Mode","Score","Time","Mistakes"])}</div>
+<div class="section"><h2>📚 Lecture Quizzes — Attempt Log</h2>Best: {badge(lq_best)} &nbsp; Rounds: {len(st.session_state.log_lq)}<br/><br/>{tbl(lq_rows(),["#","Topic","Score","Time","Mistakes"])}</div>
 <div class="footer">Generated by Neuroscience Learning Games &nbsp;·&nbsp; {datetime.now().strftime("%d/%m/%Y %H:%M")} &nbsp;·&nbsp; Submitted by: <strong>{name}</strong></div>
 </div></body></html>"""
 
@@ -1053,6 +1627,7 @@ def init_state():
         "log_match": [],
         "log_quiz":  [],
         "log_cn":    [],
+        "log_lq":    [],
         # Sequencing
         "seq_key":       list(SEQUENCES.keys())[0],
         "seq_diff":      "Intermediate (8 steps)",
@@ -1085,6 +1660,20 @@ def init_state():
         "quiz_start_ts": None,
         "quiz_answers":  [],
         "quiz_logged":   False,  # guard: prevent double-recording
+        # Lecture quiz
+        "lq_topic":      "All Topics",
+        "lq_num_qs":     10,
+        "lq_questions":  None,
+        "lq_idx":        0,
+        "lq_answered":   False,
+        "lq_chosen":     None,
+        "lq_correct":    None,
+        "lq_score":      0,
+        "lq_finished":   False,
+        "lq_attempts":   0,
+        "lq_start_ts":   None,
+        "lq_answers":    [],
+        "lq_logged":     False,
         # Cranial nerves
         "cn_mode":       list(CN_MODES.keys())[0],
         "cn_questions":  None,
@@ -1169,7 +1758,33 @@ def load_quiz():
     st.session_state.quiz_answers  = []
     st.session_state.quiz_logged   = False
 
-# ── Cranial nerve helpers ─────────────────────────────────────────────────────
+# ── Lecture quiz helpers ──────────────────────────────────────────────────────
+
+def load_lq():
+    topic = st.session_state.lq_topic
+    if topic == "All Topics":
+        pool = LECTURE_QUIZ_QUESTIONS.copy()
+    else:
+        pool = [q for q in LECTURE_QUIZ_QUESTIONS if q["topic"] == topic]
+    n = min(st.session_state.lq_num_qs, len(pool))
+    qs = random.sample(pool, n)
+    st.session_state.lq_questions = qs
+    st.session_state.lq_idx       = 0
+    st.session_state.lq_answered  = False
+    st.session_state.lq_chosen    = None
+    st.session_state.lq_correct   = None
+    st.session_state.lq_score     = 0
+    st.session_state.lq_finished  = False
+    st.session_state.lq_start_ts  = time.time()
+    st.session_state.lq_answers   = []
+    st.session_state.lq_logged    = False
+
+def record_lq_attempt(topic, score_pct, hits, n, time_secs, mistakes):
+    st.session_state.log_lq.append({
+        "timestamp": datetime.now().strftime("%H:%M:%S"),
+        "topic": topic, "score_pct": score_pct, "hits": hits, "n": n,
+        "time_secs": time_secs, "mistakes": mistakes,
+    })
 
 def load_cn():
     n    = st.session_state.cn_num_qs
@@ -1211,10 +1826,11 @@ def _prep_cn_options():
 # ══════════════════════════════════════════════════════════════════════════════
 
 init_state()
-if st.session_state.seq_order   is None: load_seq()
-if st.session_state.match_items is None: load_match()
-if st.session_state.quiz_qs     is None: load_quiz()
+if st.session_state.seq_order    is None: load_seq()
+if st.session_state.match_items  is None: load_match()
+if st.session_state.quiz_qs      is None: load_quiz()
 if st.session_state.cn_questions is None: load_cn()
+if st.session_state.lq_questions is None: load_lq()
 
 # ══════════════════════════════════════════════════════════════════════════════
 # STUDENT NAME GATE
@@ -1264,11 +1880,12 @@ with st.sidebar:
     st.markdown(f"**Matching** — {st.session_state.match_attempts} attempts · best {st.session_state.match_best}%")
     st.markdown(f"**Quiz** — {st.session_state.quiz_attempts} games played")
     st.markdown(f"**Cranial Nerves** — {st.session_state.cn_attempts} rounds played")
+    st.markdown(f"**Lecture Quizzes** — {st.session_state.lq_attempts} rounds played")
     st.markdown("---")
 
     # Download buttons
     st.markdown("### 📄 Progress Report")
-    total_att = sum(len(st.session_state[k]) for k in ("log_seq","log_match","log_quiz","log_cn"))
+    total_att = sum(len(st.session_state[k]) for k in ("log_seq","log_match","log_quiz","log_cn","log_lq"))
     if total_att == 0:
         st.info("Complete at least one game to unlock your report.")
     else:
@@ -1300,7 +1917,8 @@ with st.sidebar:
         "**Sequencing:** Drag cards to reorder.\n\n"
         "**Matching:** Select the correct definition for each term.\n\n"
         "**True/False:** Read the explanation after each answer.\n\n"
-        "**Cranial Nerves:** Select the correct answer from four options."
+        "**Cranial Nerves:** Select the correct answer from four options.\n\n"
+        "**Lecture Quizzes:** 100 MCQs from your lecture material, organised by topic."
     )
     st.markdown("---")
 
@@ -1376,15 +1994,15 @@ with st.sidebar:
 
 st.markdown('<p class="app-title">🧠 Neuroscience Learning Games</p>', unsafe_allow_html=True)
 elapsed_b = fmt_duration(time.time()-st.session_state.session_start_ts)
-total_logged = sum(len(st.session_state[k]) for k in ("log_seq","log_match","log_quiz","log_cn"))
+total_logged = sum(len(st.session_state[k]) for k in ("log_seq","log_match","log_quiz","log_cn","log_lq"))
 st.markdown(
     f'<div class="student-banner">'
     f'<span class="student-name-display">👤 {st.session_state.student_name}</span>'
     f'<span class="student-time-display">⏱️ {elapsed_b} &nbsp;|&nbsp; 📝 {total_logged} attempts logged</span>'
     f'</div>', unsafe_allow_html=True)
 
-tab_seq, tab_match, tab_quiz, tab_cn = st.tabs([
-    "🔢  Sequencing", "🔗  Matching", "🧪  True or False", "🧠  Cranial Nerves"
+tab_seq, tab_match, tab_quiz, tab_cn, tab_lq = st.tabs([
+    "🔢  Sequencing", "🔗  Matching", "🧪  True or False", "🧠  Cranial Nerves", "📚  Lecture Quizzes"
 ])
 
 # ══════════════════════════════════════════════════════════════════════════════
@@ -1620,7 +2238,7 @@ with tab_quiz:
         if not st.session_state.quiz_answered:
             c1, c2 = st.columns(2)
             with c1:
-                if st.button("✅  TRUE", use_container_width=True, key=f"qt_{idx}", type="primary"):
+                if st.button("✅  TRUE", use_container_width=True, key=f"qt_{idx}", type="secondary"):
                     correct = (q["answer"] is True)
                     st.session_state.quiz_answered = True
                     st.session_state.quiz_correct  = correct
@@ -1853,3 +2471,170 @@ with tab_cn:
 """)
             st.markdown("**Mnemonic for nerve types (S=Sensory, M=Motor, B=Both):**")
             st.markdown("*Some Say Marry Money But My Brother Says Big Brains Matter More* → S S M M B M B S B M M M")
+
+# ══════════════════════════════════════════════════════════════════════════════
+# TAB 5 — LECTURE QUIZZES
+# ══════════════════════════════════════════════════════════════════════════════
+with tab_lq:
+    st.markdown('<p class="section-title">Lecture Quizzes</p>', unsafe_allow_html=True)
+    st.markdown('<p class="section-desc">100 multiple-choice questions drawn from your lecture material, organised across 10 topics. Select a topic and round length, then answer each question.</p>', unsafe_allow_html=True)
+
+    # ── Settings ──
+    topic_options = ["All Topics"] + LECTURE_QUIZ_TOPICS
+    col_l1, col_l2, col_l3 = st.columns([2, 1.5, 1])
+    with col_l1:
+        lq_topic_choice = st.selectbox("Topic", topic_options, key="lq_topic_sel",
+            index=topic_options.index(st.session_state.lq_topic))
+
+    # Round length is capped by how many questions the chosen topic holds:
+    # each single topic has 10 questions; "All Topics" draws on the full bank.
+    lq_max_q       = 20 if lq_topic_choice == "All Topics" else 10
+    lq_num_options = [n for n in (5, 10, 15, 20) if n <= lq_max_q]
+    # Seed / clamp the dropdown's stored value so it's always a valid option
+    lq_stored = st.session_state.get("lq_num_sel", st.session_state.lq_num_qs)
+    if lq_stored not in lq_num_options:
+        lq_stored = lq_num_options[-1]
+    st.session_state["lq_num_sel"] = lq_stored
+
+    with col_l2:
+        lq_num_choice = st.selectbox("Questions per round", lq_num_options, key="lq_num_sel")
+    with col_l3:
+        st.markdown("<br>", unsafe_allow_html=True)
+        if st.button("🔄 New Round", use_container_width=True, key="lq_new"):
+            st.session_state.lq_topic   = lq_topic_choice
+            st.session_state.lq_num_qs  = lq_num_choice
+            load_lq(); st.rerun()
+
+    if lq_topic_choice != st.session_state.lq_topic or lq_num_choice != st.session_state.lq_num_qs:
+        st.session_state.lq_topic  = lq_topic_choice
+        st.session_state.lq_num_qs = lq_num_choice
+        load_lq(); st.rerun()
+
+    lq_qs    = st.session_state.lq_questions
+    lq_idx   = st.session_state.lq_idx
+    lq_total = len(lq_qs)
+
+    # ── FINISHED ──
+    if st.session_state.lq_finished:
+        lq_score = st.session_state.lq_score
+        lq_pct   = int(round(lq_score / lq_total * 100))
+
+        st.markdown(f'<div class="prog-outer"><div class="prog-inner" style="width:{lq_pct}%"></div></div>', unsafe_allow_html=True)
+        st.markdown(f'<p class="score-big">{lq_score}/{lq_total}</p>', unsafe_allow_html=True)
+        st.markdown(f'<p class="score-sub">({lq_pct}%) — round complete · Topic: {st.session_state.lq_topic}</p>', unsafe_allow_html=True)
+        fb_cls, fb_msg = score_feedback(lq_pct, lq_score, lq_total)
+        st.markdown(f'<div class="fb {fb_cls}">{fb_msg}</div>', unsafe_allow_html=True)
+
+        with st.expander("📋 Review all questions"):
+            for a in st.session_state.lq_answers:
+                ok_class = "correct" if a["correct"] else "incorrect"
+                ico = "✅" if a["correct"] else "❌"
+                wrong_html = ""
+                if not a["correct"]:
+                    wrong_html = f'<br/><span style="font-size:0.82rem;color:#16a34a">✔ Correct: <b>{a["correct_ans"]}</b></span>'
+                st.markdown(
+                    f'<div class="quiz-final-row {ok_class}">'
+                    f'<div style="flex-shrink:0;font-size:1.1rem">{ico}</div>'
+                    f'<div><span style="font-size:0.75rem;color:#64748b;font-weight:600">{a["topic"].upper()}</span><br/>'
+                    f'<strong>{a["q"]}</strong><br/>'
+                    f'<span style="font-size:0.83rem;color:#64748b">Your answer: <b>{a["chosen"]}</b></span>'
+                    f'{wrong_html}<br/>'
+                    f'<span style="font-size:0.82rem;color:#1e40af">💡 {a["explanation"]}</span>'
+                    f'</div></div>', unsafe_allow_html=True)
+
+        st.markdown('<hr class="divider">', unsafe_allow_html=True)
+        c1, c2 = st.columns(2)
+        with c1:
+            if st.button("🔄 Play Again (same settings)", use_container_width=True, type="primary", key="lq_again"):
+                load_lq(); st.rerun()
+        with c2:
+            if st.button("🔀 Change Topic", use_container_width=True, key="lq_change"):
+                st.rerun()
+
+    # ── IN PROGRESS ──
+    else:
+        prog_pct = int(round(lq_idx / lq_total * 100))
+        st.markdown(f'<div class="prog-outer"><div class="prog-inner" style="width:{prog_pct}%"></div></div>', unsafe_allow_html=True)
+        st.markdown(
+            f'<p style="font-size:0.85rem;color:#64748b;text-align:right;margin-top:2px">'
+            f'Question {lq_idx+1} of {lq_total} &nbsp;|&nbsp; Score: {st.session_state.lq_score} &nbsp;|&nbsp; Topic: {st.session_state.lq_topic}</p>',
+            unsafe_allow_html=True)
+
+        q = lq_qs[lq_idx]
+
+        # Topic badge + question card
+        st.markdown(
+            f'<div style="display:inline-block;background:#e0f2fe;color:#0369a1;border-radius:5px;'
+            f'padding:2px 10px;font-size:0.78rem;font-weight:600;margin-bottom:6px">'
+            f'{q["topic"]}</div>',
+            unsafe_allow_html=True)
+        st.markdown(f'<div class="quiz-q-card">{q["q"]}</div>', unsafe_allow_html=True)
+
+        if not st.session_state.lq_answered:
+            # Render options — True/False as 2 cols, MCQ as 2 cols
+            opts = q["options"]
+            col1, col2 = st.columns(2)
+            for i, opt in enumerate(opts):
+                btn_col = col1 if i % 2 == 0 else col2
+                with btn_col:
+                    if st.button(opt, use_container_width=True, key=f"lq_opt_{lq_idx}_{i}",
+                                 type="secondary"):
+                        correct = (opt == q["correct"])
+                        st.session_state.lq_answered = True
+                        st.session_state.lq_chosen   = opt
+                        st.session_state.lq_correct  = correct
+                        if correct: st.session_state.lq_score += 1
+                        st.session_state.lq_answers.append({
+                            "topic":       q["topic"],
+                            "q":           q["q"],
+                            "chosen":      opt,
+                            "correct_ans": q["correct"],
+                            "correct":     correct,
+                            "explanation": q["explanation"],
+                        })
+                        st.rerun()
+        else:
+            chosen  = st.session_state.lq_chosen
+            correct = st.session_state.lq_correct
+            opts    = q["options"]
+
+            col1, col2 = st.columns(2)
+            for i, opt in enumerate(opts):
+                btn_col = col1 if i % 2 == 0 else col2
+                with btn_col:
+                    if opt == q["correct"]:
+                        st.markdown(f'<div class="cn-option-btn cn-option-correct">✅ {opt}</div>', unsafe_allow_html=True)
+                    elif opt == chosen and not correct:
+                        st.markdown(f'<div class="cn-option-btn cn-option-wrong">❌ {opt}</div>', unsafe_allow_html=True)
+                    else:
+                        st.markdown(f'<div class="cn-option-btn" style="opacity:0.4">{opt}</div>', unsafe_allow_html=True)
+
+            if correct:
+                st.markdown('<div class="fb fb-ok">✅ Correct!</div>', unsafe_allow_html=True)
+            else:
+                st.markdown(
+                    f'<div class="fb fb-low">❌ Incorrect — correct answer: <strong>{q["correct"]}</strong></div>',
+                    unsafe_allow_html=True)
+            st.markdown(f'<div class="quiz-explanation">💡 <strong>Explanation:</strong> {q["explanation"]}</div>', unsafe_allow_html=True)
+
+            st.markdown('<hr class="divider">', unsafe_allow_html=True)
+            if lq_idx + 1 < lq_total:
+                if st.button("Next Question →", use_container_width=True, type="primary", key=f"lq_next_{lq_idx}"):
+                    st.session_state.lq_idx      += 1
+                    st.session_state.lq_answered  = False
+                    st.session_state.lq_chosen    = None
+                    st.session_state.lq_correct   = None
+                    st.rerun()
+            else:
+                if st.button("🏁 See Final Results", use_container_width=True, type="primary", key="lq_final"):
+                    st.session_state.lq_finished = True
+                    if not st.session_state.lq_logged:
+                        elapsed_s = time.time() - (st.session_state.lq_start_ts or time.time())
+                        final_pct = int(round(st.session_state.lq_score / lq_total * 100))
+                        mistakes  = [(a["q"][:60], a["chosen"], a["correct_ans"])
+                                     for a in st.session_state.lq_answers if not a["correct"]]
+                        record_lq_attempt(st.session_state.lq_topic, final_pct,
+                                          st.session_state.lq_score, lq_total, elapsed_s, mistakes)
+                        st.session_state.lq_attempts += 1
+                        st.session_state.lq_logged   = True
+                    st.rerun()
